@@ -173,7 +173,12 @@ links_settings:
   layout: block
 
 links:
-  #Title: https://example.com
+  Keysking: https://blog.keysking.com/
+  Liul14n: http://liul14n.top/
+  桜風の狐: https://blog.inuyasha.love/
+  Grayi: https://echosorari.github.io/
+  Pwn4Club: https://pwn4.club/
+  Gentlemen: https://ge.ntle.men/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
