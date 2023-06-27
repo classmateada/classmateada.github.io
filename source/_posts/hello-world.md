@@ -1,5 +1,6 @@
 ---
 title: Hello World
+lang: en
 tags:
   - foo
 categories:
