@@ -8,13 +8,15 @@ subtitle: C++ | SRE | Cloud Native | Open Source
 description: Be pragmatic and enjoy the simplicity.
 keywords: C++ | SRE | Open Source
 author: Ada Mu
-language: en
+language:
+  - en
+  - zh-CN
 timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://www.classmateada.com
-permalink: :lang/:hash/
+permalink: :lang/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -105,3 +107,14 @@ deploy:
   type: git
   repo: https://github.com/classmateada/classmateada.github.io
   branch: main
+
+# config hexo-generator-i18n option (optional, this is default option)
+i18n:
+  type:
+    - page
+    - post
+  generator:
+    - archive
+    - category
+    - tag
+    - index
