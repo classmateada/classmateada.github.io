@@ -14,21 +14,21 @@ I'm:
 
 - an international student pursuing a Master of Information Technology
 - a C/C++ developer
-- an UNIX-like operating system (mainly macOS and Arch Linux) user
+- a UNIX-like operating system (mainly macOS and Arch Linux) user
 - a pragmatist
 - a barista
 
-I'm interest in:
+I'm interested in:
 
 - C/C++ development
 - compliers
 - UNIX-like operating system design and development
 - Site Reliability Engineering (SRE)
-
-I've been worked as a:
+  
+I've worked as a:
 
 - Game Reliability Engineer (GRE) in Garena for 8 months
-- Software Engineer in Huawei for 5 months
+- outsourcing Software Engineer in Huawei for 5 months
 
 Besides, I'm sorry for my broken English. Since I'm a beginner at using English every day, please ignore the potential typos and grammar mistakes in my articles. You can leave a comment about those mistakes if you want, and I will correct them as soon as I receive your comment.
 
@@ -62,7 +62,7 @@ This is a static website that is based on [Hexo](https://hexo.io), open-sourced 
 我曾经是一名：
 
 - 在 Garena 工作了 8 个月的 Game Reliability Engineer (运维开发工程师 / GRE)。
-- 在华为工作了 5 个月的通用软件工程师。
+- 在华为外包工作了 5 个月的通用软件工程师。
 
 ## 关于本站
 
