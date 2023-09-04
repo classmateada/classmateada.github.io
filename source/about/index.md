@@ -12,7 +12,7 @@ Hi, I'm ClassmateAda. Just call me Ada.
 
 I'm:
 
-- an international student pursuing a Master of Information Technology in [UNSW Sydney](https://www.unsw.edu.au/)
+- an international student pursuing a Master of Information Technology
 - a C/C++ developer
 - an UNIX-like operating system (mainly macOS and Arch Linux) user
 - a pragmatist
@@ -36,7 +36,7 @@ Besides, I'm sorry for my broken English. Since I'm a beginner at using English 
 
 This is my personal website. At most times, I will post some articles and notes about software development here. I'll probably post something not related to technology here as well.
 
-This is a static website that is based on Hexo, open-sourced on GitHub, and hosted on [Vercel](https://vercel.com).
+This is a static website that is based on [Hexo](https://hexo.io), open-sourced on [GitHub](https://github.com), and hosted on [Vercel](https://vercel.com).
 
 # 关于（中文版）
 
@@ -46,7 +46,7 @@ This is a static website that is based on Hexo, open-sourced on GitHub, and host
 
 我是一名：
 
-- 正在[新南威尔士大学](https://www.unsw.edu.au/)攻读信息技术硕士（Master of IT）的留学生。
+- 正在攻读信息技术硕士（Master of IT）的留学生。
 - C/C++ 开发者。
 - 类 UNIX 操作系统使用者（主要使用 macOS 和 Arch Linux）。
 - 实用主义者。
@@ -68,4 +68,4 @@ This is a static website that is based on Hexo, open-sourced on GitHub, and host
 
 这是我的个人网站。我在此发表的大多数文章和笔记都是有关于软件开发的，但我有时也会发表一些非技术文章。
 
-本站是基于 Hexo 的纯静态网站，在 GitHub 上开源，托管在 [Vercel](https://vercel.com) 上。
+本站是基于 [Hexo](https://hexo.io) 的纯静态网站，在 [GitHub](https://github.com) 上开源，托管在 [Vercel](https://vercel.com) 上。
