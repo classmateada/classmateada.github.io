@@ -127,18 +127,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -179,9 +179,6 @@
               <a href="https://echosorari.github.io/" title="https:&#x2F;&#x2F;echosorari.github.io&#x2F;" rel="noopener" target="_blank">Grayi</a>
             </li>
             <li class="links-of-blogroll-item">
-              <a href="https://pwn4.club/" title="https:&#x2F;&#x2F;pwn4.club&#x2F;" rel="noopener" target="_blank">Pwn4Club</a>
-            </li>
-            <li class="links-of-blogroll-item">
               <a href="https://ge.ntle.men/" title="https:&#x2F;&#x2F;ge.ntle.men&#x2F;" rel="noopener" target="_blank">Gentlemen</a>
             </li>
         </ul>
@@ -193,6 +190,204 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/Why-I-gave-up-Cloud-Native/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="ClassmateAda">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ClassmateAda">
+      <meta itemprop="description" content="Hello world.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ClassmateAda">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/Why-I-gave-up-Cloud-Native/" class="post-title-link" itemprop="url">Why I gave up Cloud Native</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-09-08 22:04:21" itemprop="dateCreated datePublished" datetime="2023-09-08T22:04:21+10:00">2023-09-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-09 01:47:12" itemprop="dateModified" datetime="2023-09-09T01:47:12+10:00">2023-09-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Cloud-Native/" itemprop="url" rel="index"><span itemprop="name">Cloud Native</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>I chose not to follow Cloud Native for several reasons, and I found that Cloud Native is not as powerful as I used to believe. It’s not a “silver bullet”, and I don’t need to stick to it.</p>
+</blockquote>
+<h1 id="How-did-I-know-Cloud-Native"><a href="#How-did-I-know-Cloud-Native" class="headerlink" title="How did I know Cloud Native"></a>How did I know Cloud Native</h1><p>I was passionate about Spring Cloud Alibaba-based microservices before April 2020 because it’s really easy to use it to develop faultless microservices. I developed a Spring Cloud Alibaba-based project to participate in a software development competition. However, after I transferred the microservices into Docker containers and used Kubernetes (K8S) to manage them, I found Kubernetes and Spring Cloud could not work together: some functionalities (like Nacos and ApiServer, Spring Cloud Gateway and Ingress) overlapped and caused incompatibility between them. There were so many conflicts that the entire project couldn’t work properly.</p>
+<p>That failure reminded me that I didn’t know enough about Spring Cloud and Kubernetes. After searching for a lot of information, I realized that Spring Cloud is a framework for building “traditional” microservices, which are not so suitable for Kubernetes unless using Spring Cloud Kubernetes. I also learned about a new technology called “Service Mesh” and a new theory related to Service Mesh called “Cloud Native” when collecting information related to K8S.</p>
+<p>It was a little hard for me to understand service mesh and Cloud Native then, but after I read some articles and books related to them, I finally knew what they were and what their advantages were. Suddenly, I felt that “traditional” microservices were outdated because they depended a lot on SDKs. Many basic functionalities, like service discovery and resource management, are provided by SDKs, which are coupled with service codes. What’s worse, the service codes need to be changed every time the SDKs make destructive updates. Service mesh provides a better solution: refactor those basic functionalities into a separate process or container that runs with (in the same Pod) the microservice container. Service mesh amazed me and solved my problems with microservices completely.</p>
+<h1 id="Cloud-Native-is-my-favorite-theory-ever"><a href="#Cloud-Native-is-my-favorite-theory-ever" class="headerlink" title="Cloud Native is my favorite theory ever"></a>Cloud Native is my favorite theory ever</h1><p>Service mesh piqued my interest in Cloud Native. I found that it’s an attractive theory that everyone holds their own opinion on it. Though it’s so abstract that I still can’t fully understand it, I kept studying and following Cloud Native from 2020 to 2022. I decided I needed to get a job related to Cloud Native (such as Cloud Native Engineer, Site Reliability Engineer, and Basic Software Developer). So I chose Golang as the programming language I mainly used and studied a lot about Docker, Kubernetes, and Istio. I never missed every conference about Cloud Native and service mesh that I was able to attend then. I don’t think it’s a successful choice, but in addition to learning how to use Cloud Native tools and their inner workings, I also learned a lot about software design and software architecture.</p>
+<p>Looking back to that time now, I can confidently say that “Cloud Native is my favorite theory ever”.</p>
+<h1 id="Why-I-gave-up-Cloud-Native"><a href="#Why-I-gave-up-Cloud-Native" class="headerlink" title="Why I gave up Cloud Native"></a>Why I gave up Cloud Native</h1><p>Finally, I chose not to follow Cloud Native in late 2022 due to three main reasons:</p>
+<ol>
+<li>Cloud Native is just an immature and abstract theory in software engineering; it’s impossible to use it to solve every kind of problem, such as designing a simple and low-cost web service.</li>
+<li>Startups and small businesses don’t have to use Cloud Native and service meshes in practice. They’re only suitable for large-scale web services.</li>
+<li>Cloud Native is a broad theory; I don’t have to stick to it. For example, developing and maintaining UNIX-like operating systems and high-performance proxies can also make contributions to Cloud Native and service mesh.</li>
+</ol>
+<p>That doesn’t mean that Cloud Native is bad and we shouldn’t pay any attention to it. To be precise, I have changed my way of making contributions to it by focusing on developing UNIX-like operating systems, proxies, virtual machines, and other basic software related to the cloud.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="ClassmateAda">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ClassmateAda">
+      <meta itemprop="description" content="Hello world.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ClassmateAda">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/zh/Why-I-gave-up-Cloud-Native-Chinese/" class="post-title-link" itemprop="url">为什么我放弃了云原生（中文版）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-09-08 22:04:07" itemprop="dateCreated datePublished" datetime="2023-09-08T22:04:07+10:00">2023-09-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-09 01:47:18" itemprop="dateModified" datetime="2023-09-09T01:47:18+10:00">2023-09-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/" itemprop="url" rel="index"><span itemprop="name">云原生</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>出于种种原因，我选择不再关注云原生。在那之后，我发现云原生并没有像我以前坚信的一样强大，它不是银弹，我也无需执着于它。</p>
+</blockquote>
+<h1 id="第一次认识云原生"><a href="#第一次认识云原生" class="headerlink" title="第一次认识云原生"></a>第一次认识云原生</h1><p>在 2022 年 4 月之前，我曾经非常喜欢基于 Spring Cloud Alibaba 的微服务——使用它可以很容易地开发出完善的微服务。我开发了一套基于 Spring Cloud Alibaba 的微服务用于参加一个软件开发比赛，但在我将这些微服务制作成 Docker 容器并使用 Kubernetes (K8S) 去管理之后，我发现 K8S 和 Spring Cloud 并不能很好地配合：它们中的很多功能（例如 Spring Cloud Gateway 与 Ingress）都是重复的，造成了两者互不兼容。两者之间的冲突多到整个项目都无法正常运行。</p>
+<p>这次犯错让我意识到我对 Spring Cloud Alibaba 和 Kubernetes 的了解都远远不够。在查找了足够多的信息后，我意识到 Spring Cloud 是用于构建传统微服务的框架，并不适合与 K8S 一起使用——除非你使用 Spring Cloud Kubernetes。此外，我也在收集资料的过程中了解到了一种名叫“Service Mesh”的新技术和一种名叫“云原生”的新理论。</p>
+<p>对于当时的我来说，云原生和 Service Mesh 并不是容易理解的知识。但当我读了许多与此相关的文章和书籍之后，我最终理解了它们是什么，以及它们的优势在哪里。我立刻感到传统微服务是相当落后的东西——传统微服务过于依赖 SDK，服务代码与 SDK 紧密耦合，微服务架构中的许多通用基本功能，例如服务发现、资源调度等，都是由 SDK 提供的。更糟糕的是，当 SDK 发生破坏性更新时，服务代码也得跟着更新。Service Mesh 提供了一种更棒的解决方案：将这些基本功能做成一个进程或容器，并使其与微服务容器共同运行（也就是运行在同一个 Pod 里）。Service Mesh 令我震惊的同时，还解决了我关于微服务的所有问题。</p>
+<h1 id="云原生，我曾经最爱的理论"><a href="#云原生，我曾经最爱的理论" class="headerlink" title="云原生，我曾经最爱的理论"></a>云原生，我曾经最爱的理论</h1><p>Service Mesh 引起了我对于云原生的兴趣。我发现云原生是一种引人注目的理论，并且一千个人眼中有一千种云原生。即使云原生如此抽象，以至于我至今都无法完全理解它，但我仍然在 2020 到 2022 年间持续学习它。我决定要从事与云原生相关的工作（例如云原生工程师、SRE、基础软件工程师等），所以我选择了 Go 语言作为我主要使用的编程语言，并且深入学习了 Docker、K8S 和 Istio，还没有错过任何一场我可以参加的有关于云原生和 Service Mesh 的会议。我并不认为这是一个成功的选择，不过我除了学习使用这些云原生工具以及它们的原理之外，还学到了大量软件设计和软件架构的知识。</p>
+<p>现在再来回顾这段时光，我可以自信地说“云原生是我曾经最爱的理论”。</p>
+<h1 id="为什么我放弃了云原生"><a href="#为什么我放弃了云原生" class="headerlink" title="为什么我放弃了云原生"></a>为什么我放弃了云原生</h1><p>最终，我在 2022 年末决定不再关注云原生。做出这个决定的原因主要有以下三点：</p>
+<ol>
+<li>云原生只是软件工程领域中的一种不成熟且抽象的理论，它并不能被用于解决所有问题——例如设计简单且低成本的 Web 服务。</li>
+<li>创业公司和小公司在实践中不适合使用云原生和 Service Mesh。这是针对成熟的大型 Web 服务的理论和工具。</li>
+<li>云原生是一种非常宽泛的理论，我并不需要如此执着于它本身。例如，开发和维护类 UNIX 操作系统和高性能的网络代理服务也是对云原生和 Service Mesh 的贡献。</li>
+</ol>
+<p>当然，这并不意味着云原生这一理论不好或者我们不应该关注它。准确地说，我只是改变了为它做贡献的方法——现在的我将专注于开发类 UNIX 操作系统、网络代理、虚拟机等与云相关的基础软件，以此为云原生做出自己的贡献。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
