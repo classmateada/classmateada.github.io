@@ -19,7 +19,7 @@ int main() {
 ```
 
 > This is the very first program I developed.
-> Just like me, most programmers' very first programme is to print "Hello world" in the terminal.
+> Just like me, most programmers' very first program is to print "Hello world" in the terminal.
 > Then, it's the most suitable title for the very first article I write after I've started a completely new life.
 
 # A destroyed "game account"
