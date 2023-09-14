@@ -5,7 +5,7 @@ date: 2023-09-05 03:39:43
 tags:
   - Personal improvement
 categories:
-  - non-technical
+  - Non-technical
 ---
 
 ```c++
