@@ -13,7 +13,7 @@ categories:
 
 ## Background of the Problems
 
-I've enrolled in a course that is mainly about AVR Assembly language this semester. In the lab of this course, we need to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to write, debug, and test AVR Assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use a virtual machine to run this IDE.
+I've enrolled in a course whose main content is AVR Assembly language this semester. In the lab of this course, we need to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to write, debug, and test AVR Assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use a virtual machine to run this IDE.
 
 I used `Parallels Desktop`, the virtualization software that I mainly used, and its official wizard (`Get Windows 11 from Microsoft`) to create a Windows 11 VM and successfully install Microchip Studio in it. However, I encountered some weird problems when I started using Microchip Studio.
 
