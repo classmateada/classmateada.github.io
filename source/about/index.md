@@ -16,6 +16,7 @@ I'm:
 - a C/C++ developer
 - a UNIX-like operating system (mainly macOS and Arch Linux) user
 - a pragmatist
+- a minimalist
 - a barista
 
 I'm interested in:
@@ -28,13 +29,15 @@ I'm interested in:
 I've worked as a:
 
 - Game Reliability Engineer (GRE) in Garena for 8 months
-- outsourcing Software Engineer in Huawei for 5 months
+- outsourcing Software Engineer in the OpenHarmony Dept. of Huawei for 5 months
 
-Besides, I'm sorry for my broken English. Since I'm a beginner at using English every day, please ignore the potential typos and grammar mistakes in my articles. You can leave a comment about those mistakes if you want, and I will correct them as soon as I receive your comment.
+What's more, I'm sorry for my broken English. Since I'm a beginner at using English every day, please ignore the potential typos and grammar mistakes in my articles. You can leave a comment about those mistakes if you want, and I will correct them as soon as I receive your comment.
 
 ## What's this website for?
 
-This is my personal website. At most times, I will post some articles and notes about software development here. I'll probably post something not related to technology here as well.
+This is my personal website, which was originally created for sharing my notes and the process of troubleshooting. The purpose of creating such a website is to prevent myself from forgetting what I know or making the same mistakes again, and to help others avoid making the same mistakes I did.
+
+Please note that this is not a tech blog. At most times, I will post some articles and notes about software development and software design here. I'll regularly post something not related to technology here as well.
 
 This is a static website that is based on [Hexo](https://hexo.io), open-sourced on [GitHub](https://github.com), and hosted on [Vercel](https://vercel.com).
 
@@ -50,6 +53,7 @@ This is a static website that is based on [Hexo](https://hexo.io), open-sourced 
 - C/C++ 开发者。
 - 类 UNIX 操作系统使用者（主要使用 macOS 和 Arch Linux）。
 - 实用主义者。
+- 极简主义者。
 - 咖啡师。
 
 我对这些技术感兴趣：
@@ -62,10 +66,12 @@ This is a static website that is based on [Hexo](https://hexo.io), open-sourced 
 我曾经是一名：
 
 - 在 Garena 工作了 8 个月的 Game Reliability Engineer (运维开发工程师 / GRE)。
-- 在华为外包工作了 5 个月的通用软件工程师。
+- 在华为外包 OpenHarmony 部工作了 5 个月的通用软件工程师。
 
 ## 关于本站
 
-这是我的个人网站。我在此发表的大多数文章和笔记都是有关于软件开发的，但我有时也会发表一些非技术文章。
+这是我的个人网站，最初是用来分享笔记和解决问题的过程的。创建这样一个网站一方面是为了避免自己忘记知识和多次犯同样的错误，另一方面是为了帮助他人避免犯和我同样的错误。
+
+请注意，这不是一个技术博客。我在此发表的大多数文章和笔记都是有关于软件开发和软件设计的，但我也会经常发表一些非技术文章。
 
 本站是基于 [Hexo](https://hexo.io) 的纯静态网站，在 [GitHub](https://github.com) 上开源，托管在 [Vercel](https://vercel.com) 上。
