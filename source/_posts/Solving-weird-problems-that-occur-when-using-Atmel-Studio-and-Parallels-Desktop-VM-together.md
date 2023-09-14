@@ -5,7 +5,7 @@ title: >-
 date: 2023-09-14 23:05:57
 tags:
   - Assembly language
-  - AVR Assembly
+  - AVR assembly
   - Parallels Desktop
 categories:
   - Troubleshooting
@@ -13,7 +13,7 @@ categories:
 
 ## Background of the Problems
 
-I've enrolled in a course whose main content is AVR Assembly language this semester. In the lab of this course, we need to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to write, debug, and test AVR Assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use a virtual machine to run this IDE.
+I've enrolled in a course whose main content is AVR assembly language this semester. In the lab of this course, we have to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to develop, debug, and test AVR assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use a virtual machine to run this IDE.
 
 I used `Parallels Desktop`, the virtualization software that I mainly used, and its official wizard (`Get Windows 11 from Microsoft`) to create a Windows 11 VM and successfully install Microchip Studio in it. However, I encountered some weird problems when I started using Microchip Studio.
 
@@ -39,7 +39,7 @@ This weird layout looks like this:
 
 ### Some Output Information was Missing when Building Projects
 
-Some output information, like `memory usage`, should be shown in the Output window when building `ATmega2560` Assembler projects, but such information was missing.
+Some output information, like `memory usage`, should be shown in the Output window when building `ATmega2560` assembler projects, but such information was missing.
 
 The correct output looks like this:
 
