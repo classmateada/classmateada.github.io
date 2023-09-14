@@ -118,3 +118,6 @@ i18n:
     - category
     - tag
     - index
+
+excerpt:
+  depth: 8
