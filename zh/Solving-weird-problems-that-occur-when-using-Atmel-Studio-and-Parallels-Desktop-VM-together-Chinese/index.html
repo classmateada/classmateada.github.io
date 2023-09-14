@@ -21,12 +21,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.classmateada.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="问题的背景这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 Atmel Studio（也称 Microchip Studio）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。 我使用我最常用的虚拟机软件 Parallels Desktop 官方提供的创建 Windows 11 虚拟机的向导程序（">
+    <meta name="description" content="问题的背景这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 Microchip Studio（也称 Atmel Studio）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。 我使用我最常用的虚拟机软件 Parallels Desktop 官方提供的创建 Windows 11 虚拟机的向导程序（">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版）">
+<meta property="og:title" content="解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版）">
 <meta property="og:url" content="http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/index.html">
 <meta property="og:site_name" content="ClassmateAda">
-<meta property="og:description" content="问题的背景这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 Atmel Studio（也称 Microchip Studio）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。 我使用我最常用的虚拟机软件 Parallels Desktop 官方提供的创建 Windows 11 虚拟机的向导程序（">
+<meta property="og:description" content="问题的背景这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 Microchip Studio（也称 Atmel Studio）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。 我使用我最常用的虚拟机软件 Parallels Desktop 官方提供的创建 Windows 11 虚拟机的向导程序（">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915000402.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915003845.png">
@@ -37,12 +37,13 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915002544.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915002751.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915003133.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915031044.png">
 <meta property="article:published_time" content="2023-09-14T13:05:48.000Z">
-<meta property="article:modified_time" content="2023-09-14T14:40:04.314Z">
+<meta property="article:modified_time" content="2023-09-14T17:37:59.666Z">
 <meta property="article:author" content="ClassmateAda">
-<meta property="article:tag" content="Parallels Desktop">
 <meta property="article:tag" content="汇编语言">
 <meta property="article:tag" content="AVR 汇编">
+<meta property="article:tag" content="Parallels Desktop">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915000402.png">
 
@@ -51,10 +52,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/","path":"zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/","title":"解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/","path":"zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/","title":"解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版） | ClassmateAda</title>
+<title>解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版） | ClassmateAda</title>
   
 
 
@@ -127,7 +128,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">问题的背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%A1%A8%E7%8E%B0"><span class="nav-number">2.</span> <span class="nav-text">问题的表现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E6%97%B6%E5%BC%B9%E5%87%BA%E8%AD%A6%E5%91%8A%E6%A1%86"><span class="nav-number">2.1.</span> <span class="nav-text">启动时弹出警告框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E5%B8%83%E5%B1%80%E8%AF%A1%E5%BC%82"><span class="nav-number">2.2.</span> <span class="nav-text">界面布局诡异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%97%B6%E4%B8%8D%E8%BE%93%E5%87%BA%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E4%BF%A1%E6%81%AF"><span class="nav-number">2.3.</span> <span class="nav-text">构建解决方案时不输出内存占用信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E6%97%B6%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E6%96%AD%E7%82%B9"><span class="nav-number">2.4.</span> <span class="nav-text">调试时无法进入断点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%BF%99%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">如何解决这些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E7%BD%AE%E4%B8%BA%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">重置为默认配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.2.</span> <span class="nav-text">重新创建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%A0%E6%88%90%E9%97%AE%E9%A2%98%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">4.</span> <span class="nav-text">造成问题的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%951%EF%BC%9A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E8%BF%87%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">附录1：问题排查过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%952%EF%BC%9A%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0%E6%AD%A5%E9%AA%A4"><span class="nav-number">6.</span> <span class="nav-text">附录2：问题复现步骤</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">问题的背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%A1%A8%E7%8E%B0"><span class="nav-number">2.</span> <span class="nav-text">问题的表现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E6%97%B6%E5%BC%B9%E5%87%BA%E8%AD%A6%E5%91%8A%E6%A1%86"><span class="nav-number">2.1.</span> <span class="nav-text">启动时弹出警告框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E5%B8%83%E5%B1%80%E6%80%AA%E5%BC%82"><span class="nav-number">2.2.</span> <span class="nav-text">界面布局怪异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%97%B6%E4%B8%8D%E8%BE%93%E5%87%BA%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E4%BF%A1%E6%81%AF"><span class="nav-number">2.3.</span> <span class="nav-text">构建解决方案时不输出内存占用信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E7%82%B9%E5%B7%A5%E4%BD%9C%E4%B8%8D%E6%AD%A3%E5%B8%B8"><span class="nav-number">2.4.</span> <span class="nav-text">断点工作不正常</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E8%BF%99%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">如何解决这些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E7%BD%AE%E4%B8%BA%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">重置为默认配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.2.</span> <span class="nav-text">重新创建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%A0%E6%88%90%E9%97%AE%E9%A2%98%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">4.</span> <span class="nav-text">造成问题的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%951%EF%BC%9A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E8%BF%87%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">附录1：问题排查过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%952%EF%BC%9A%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0%E6%AD%A5%E9%AA%A4"><span class="nav-number">6.</span> <span class="nav-text">附录2：问题复现步骤</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -136,13 +137,13 @@
     <img class="site-author-image" itemprop="image" alt="ClassmateAda"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">ClassmateAda</p>
-  <div class="site-description" itemprop="description">Hello world.</div>
+  <div class="site-description" itemprop="description">Stay humble and keep it simple.</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -153,7 +154,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -224,16 +225,16 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="ClassmateAda">
-      <meta itemprop="description" content="Hello world.">
+      <meta itemprop="description" content="Stay humble and keep it simple.">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版） | ClassmateAda">
+      <meta itemprop="name" content="解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版） | ClassmateAda">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版）
+          解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版）
         </h1>
 
         <div class="post-meta-container">
@@ -251,7 +252,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-15 00:40:04" itemprop="dateModified" datetime="2023-09-15T00:40:04+10:00">2023-09-15</time>
+      <time title="Modified: 2023-09-15 03:37:59" itemprop="dateModified" datetime="2023-09-15T03:37:59+10:00">2023-09-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -259,7 +260,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Trouble-shooting/" itemprop="url" rel="index"><span itemprop="name">Trouble-shooting</span></a>
+          <a href="/categories/Troubleshooting/" itemprop="url" rel="index"><span itemprop="name">Troubleshooting</span></a>
         </span>
     </span>
 
@@ -272,11 +273,11 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="问题的背景"><a href="#问题的背景" class="headerlink" title="问题的背景"></a>问题的背景</h2><p>这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 <code>Atmel Studio</code>（也称 <code>Microchip Studio</code>）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。</p>
-<p>我使用我最常用的虚拟机软件 <code>Parallels Desktop</code> 官方提供的创建 Windows 11 虚拟机的向导程序（<code>Get Windows 11 from Microsoft</code>）创建了一个 Windows 11 虚拟机，并成功地在虚拟机中安装了 <code>Atmel Studio</code>。但是，在完成安装并开始使用 <code>Atmel Studio</code> 时，我遇到了一些奇怪的问题。</p>
-<h2 id="问题的表现"><a href="#问题的表现" class="headerlink" title="问题的表现"></a>问题的表现</h2><h3 id="启动时弹出警告框"><a href="#启动时弹出警告框" class="headerlink" title="启动时弹出警告框"></a>启动时弹出警告框</h3><p>在 <code>Atmel Studio</code> 安装完成后，每次启动都会弹出如下图所示的警告框：</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="问题的背景"><a href="#问题的背景" class="headerlink" title="问题的背景"></a>问题的背景</h2><p>这学期选了一门以讲解 AVR 汇编为主的课，在实验课中需要用到 <code>Microchip Studio</code>（也称 <code>Atmel Studio</code>）编写、调试 AVR 汇编程序。由于我平常使用的操作系统是 macOS，但这个软件只支持 Windows，所以我需要通过虚拟机使用这个软件。</p>
+<p>我使用我最常用的虚拟机软件 <code>Parallels Desktop</code> 官方提供的创建 Windows 11 虚拟机的向导程序（<code>Get Windows 11 from Microsoft</code>）创建了一个 Windows 11 虚拟机，并成功地在虚拟机中安装了 Microchip Studio。但是，在完成安装并开始使用 Microchip Studio 时，我遇到了一些奇怪的问题。</p>
+<h2 id="问题的表现"><a href="#问题的表现" class="headerlink" title="问题的表现"></a>问题的表现</h2><h3 id="启动时弹出警告框"><a href="#启动时弹出警告框" class="headerlink" title="启动时弹出警告框"></a>启动时弹出警告框</h3><p>每次启动 Microchip Studio 都会弹出如下图所示的警告框：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915000402.png" alt="警告框"></p>
-<h3 id="界面布局诡异"><a href="#界面布局诡异" class="headerlink" title="界面布局诡异"></a>界面布局诡异</h3><p>打开 <code>Atmel Studio</code> 并创建项目后，发现 <code>Atmel Studio</code> 的布局与其他 Windows PC 上运行的不一样，缺失很多按钮。</p>
+<h3 id="界面布局怪异"><a href="#界面布局怪异" class="headerlink" title="界面布局怪异"></a>界面布局怪异</h3><p>Microchip Studio 的布局与其他 Windows PC 上运行的不一样。</p>
 <p>正常界面布局如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915003845.png" alt="正常布局"></p>
 <p>此时的错误界面布局如下：</p>
@@ -286,30 +287,32 @@
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915003745.png" alt="正常构建输出"></p>
 <p>此时的错误构建输出如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915001847.png" alt="错误构建输出"></p>
-<h3 id="调试时无法进入断点"><a href="#调试时无法进入断点" class="headerlink" title="调试时无法进入断点"></a>调试时无法进入断点</h3><p>我们在 <code>mov c, a</code> 这一行（第 20 行）下断点，在开始调试后程序应该停在断点处，但开始调试后却发现断点被自动修改为 <code>ldi a, 10</code> 这一行（第 16 行），并且在调试过程中无法向除了该行之外的其他行添加断点。</p>
+<h3 id="断点工作不正常"><a href="#断点工作不正常" class="headerlink" title="断点工作不正常"></a>断点工作不正常</h3><p>调试时，Microchip Studio 会忽略用户设置的断点并自行插入新的断点。</p>
+<p>我们在 <code>mov c, a</code> 这一行（第 20 行）下断点，在开始调试后程序应该停在断点处，但开始调试后却发现断点被自动修改为 <code>ldi a, 10</code> 这一行（第 16 行），并且在调试过程中无法向除了该行之外的其他行添加断点。</p>
 <p>开始调试前的断点情况如下，可以看到断点打在 <code>mov c, a</code> 处：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915002409.png" alt="开始调试前的断点情况"></p>
 <p>开始调试后的断点情况如下，可以看到断点被自动修改到 <code>ldi a, 10</code> 处：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915002544.png" alt="开始调试后的断点情况"></p>
-<h2 id="如何解决这些问题"><a href="#如何解决这些问题" class="headerlink" title="如何解决这些问题"></a>如何解决这些问题</h2><h3 id="重置为默认配置"><a href="#重置为默认配置" class="headerlink" title="重置为默认配置"></a>重置为默认配置</h3><p>点击菜单栏中的 <code>Tools</code> - <code>Import and Export Settings...</code>，选择 <code>Reset all settings</code> 并点击 <code>Next &gt;</code>，选择 <code>Yes, save my current settings</code> 并在 <code>Store my settings file in this directory:</code> 输入框中指定一个 Windows 11 虚拟机内部的目录（如 <code>C:\Visual Studio 2015\Settings\Atmel Studio</code>），点击 <code>Finish</code>，如果弹出警告框则选择 <code>Yes</code>。如图所示。</p>
+<h2 id="如何解决这些问题"><a href="#如何解决这些问题" class="headerlink" title="如何解决这些问题"></a>如何解决这些问题</h2><h3 id="重置为默认配置"><a href="#重置为默认配置" class="headerlink" title="重置为默认配置"></a>重置为默认配置</h3><p>点击菜单栏中的 <code>Tools</code> - <code>Import and Export Settings...</code>，选择 <code>Reset all settings</code> 并点击 <code>Next &gt;</code>，选择 <code>Yes, save my current settings</code> 并在 <code>Store my settings file in this directory:</code> 输入框中指定一个 Windows 11 虚拟机内部的目录（如 <code>C:\Visual Studio 2015\Settings\Microchip Studio</code>），点击 <code>Finish</code>，如果弹出警告框则选择 <code>Yes</code>。如图所示。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915002751.png" alt="重置配置 1"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915003133.png" alt="重置配置 2"></p>
-<p>重启 <code>Atmel Studio</code>，可以发现之前每次启动都弹出的警告框消失了。</p>
-<h3 id="重新创建项目"><a href="#重新创建项目" class="headerlink" title="重新创建项目"></a>重新创建项目</h3><p>此时断点问题和没有内存输出的问题仍然存在，我们需要重建项目来解决这个问题。重新创建一个项目，并在 <code>Location:</code> 输入框中指定一个 Windows 11 虚拟机内部的目录（如 <code>c:\users\adamagnus\Documents\Atmel Studio\7.0</code>），如图所示。</p>
+<p>重启 Microchip Studio，可以发现之前每次启动都弹出的警告框消失了。</p>
+<h3 id="重新创建项目"><a href="#重新创建项目" class="headerlink" title="重新创建项目"></a>重新创建项目</h3><p>此时断点问题和没有内存输出的问题仍然存在，我们需要重建项目来解决这个问题。重新创建一个项目，并在 <code>Location:</code> 输入框中指定一个 Windows 11 虚拟机内部的目录（如 <code>c:\users\adamagnus\Documents\Microchip Studio\7.0</code>），如图所示。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/classmateada/site-pictures/img/20230915031044.png" alt="新建项目"></p>
 <p>在这个新项目中重新编写代码并尝试构建和调试，会发现断点问题和没有内存输出的问题全部消失了。</p>
-<h2 id="造成问题的原因"><a href="#造成问题的原因" class="headerlink" title="造成问题的原因"></a>造成问题的原因</h2><p><code>Parallels Desktop</code> 出于方便使用的目的，将宿主机 macOS 的文件系统在 Windows 虚拟机中映射为一个可以通过 SMB 协议访问的<strong>网络地址</strong>，并对虚拟机中的大部分软件默认提供 macOS 文件系统的目录作为文件保存路径。但是 <code>Atmel Studio</code> 无法识别网络地址，也就无法在启动时找到安装时提供的默认配置文件，于是使用默认配置启动，这就导致了上述的一系列问题。</p>
-<p>同理，如果将项目保存到 macOS 文件系统中的某个目录，<code>Atmel Studio</code> 在构建该项目时会出现问题，进而导致无法输出内存占用信息和断点功能异常。</p>
+<h2 id="造成问题的原因"><a href="#造成问题的原因" class="headerlink" title="造成问题的原因"></a>造成问题的原因</h2><p>Parallels Desktop 出于方便使用的目的，将宿主机 macOS 的文件系统在 Windows 虚拟机中映射为一个可以通过 SMB 协议访问的<strong>网络地址</strong>，并对虚拟机中的大部分软件默认提供 macOS 文件系统的目录作为文件保存路径。但是 Microchip Studio 无法识别网络地址，也就无法在启动时找到安装时提供的默认配置文件，于是使用默认配置启动，这就导致了上述的一系列问题。</p>
+<p>同理，如果将项目保存到 macOS 文件系统中的某个目录，Microchip Studio 在构建该项目时会出现问题，进而导致无法输出内存占用信息和断点功能异常。</p>
 <h2 id="附录1：问题排查过程"><a href="#附录1：问题排查过程" class="headerlink" title="附录1：问题排查过程"></a>附录1：问题排查过程</h2><ol>
 <li>排除项目本身的问题：我新建了一个项目并把代码复制粘贴进去，没有解决问题。</li>
-<li>排除代码的问题：修改新建的项目的代码为 <code>Atmel Studio</code> 创建项目时的默认代码，没有解决问题。</li>
-<li>排除操作系统版本的问题：尝试使用其他 Windows 11 和相同版本的 <code>Atmel Studio</code> 创建相同的配置、编写相同的代码，发现在其他 Windows 11 上没有出现任何问题。</li>
-<li>排除虚拟机和软件安装的问题：新建一个空的 Windows 11 虚拟机，重新安装 <code>Atmel Studio</code>，发现界面布局仍然很诡异，问题仍然没有解决。</li>
-<li>解决警告框、重置配置：注意到在新的虚拟机上安装的 <code>Atmel Studio</code> 仍然在每次打开时弹出警告框，于是尝试解决这个警告框。在通过重置配置并将配置文件保存到虚拟机的文件系统中后，问题解决。</li>
+<li>排除代码的问题：修改新建的项目的代码为 Microchip Studio 创建项目时的默认代码，没有解决问题。</li>
+<li>排除操作系统版本的问题：尝试使用其他 Windows 11 和相同版本的 Microchip Studio 创建相同的配置、编写相同的代码，发现在其他 Windows 11 上没有出现任何问题。</li>
+<li>排除虚拟机和软件安装的问题：新建一个空的 Windows 11 虚拟机，重新安装 Microchip Studio，发现界面布局仍然很诡异，问题仍然没有解决。</li>
+<li>解决警告框、重置配置：注意到在新的虚拟机上安装的 Microchip Studio 仍然在每次打开时弹出警告框，于是尝试解决这个警告框。在通过重置配置并将配置文件保存到虚拟机的文件系统中后，问题解决。</li>
 </ol>
 <h2 id="附录2：问题复现步骤"><a href="#附录2：问题复现步骤" class="headerlink" title="附录2：问题复现步骤"></a>附录2：问题复现步骤</h2><ol>
-<li>使用 <code>Parallels Desktop</code> 创建一个 Windows 11 虚拟机。</li>
-<li>安装最新版本的 <code>Atmel Studio</code>。</li>
-<li>运行 <code>Atmel Studio</code>，在弹出警告框时点击 <code>OK</code>。</li>
+<li>使用 Parallels Desktop 创建一个 Windows 11 虚拟机。</li>
+<li>在虚拟机中安装最新版本的 Microchip Studio。</li>
+<li>运行 Microchip Studio，在弹出警告框时点击 <code>OK</code>。</li>
 <li>创建一个汇编语言项目，设备选择 <code>ATmega2560</code>。</li>
 <li>尝试构建和断点调试该项目。</li>
 </ol>
@@ -330,7 +333,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/" title="解决在 Parallels Desktop 虚拟机中使用 Atmel Studio 时出现的问题（中文版）">http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/</a>
+      <a href="http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/" title="解决在 Parallels Desktop 虚拟机中使用 Microchip Studio 时出现的问题（中文版）">http://www.classmateada.com/zh/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together-Chinese/</a>
   </li>
   <li class="post-copyright-license">
       <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -339,9 +342,9 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Parallels-Desktop/" rel="tag"># Parallels Desktop</a>
               <a href="/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" rel="tag"># 汇编语言</a>
               <a href="/tags/AVR-%E6%B1%87%E7%BC%96/" rel="tag"># AVR 汇编</a>
+              <a href="/tags/Parallels-Desktop/" rel="tag"># Parallels Desktop</a>
           </div>
 
         
@@ -353,6 +356,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/undefined/Solving-weird-problems-that-occur-when-using-Atmel-Studio-and-Parallels-Desktop-VM-together/" rel="next" title="Solving Problems that Occur When Using Microchip Studio and Parallels Desktop VM Together">
+                  Solving Problems that Occur When Using Microchip Studio and Parallels Desktop VM Together <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
