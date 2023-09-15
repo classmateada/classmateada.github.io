@@ -1,6 +1,6 @@
 ---
 title: >-
-  Solving Problems that Occur When Using Microchip Studio and Parallels Desktop
+  Solving Problems that Occur when Using Microchip Studio and Parallels Desktop
   VM Together
 lang: en
 date: 2023-09-14 23:05:57
