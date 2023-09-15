@@ -2,6 +2,7 @@
 title: >-
   Solving Problems that Occur When Using Microchip Studio and Parallels Desktop
   VM Together
+lang: en
 date: 2023-09-14 23:05:57
 tags:
   - Assembly language
@@ -13,7 +14,7 @@ categories:
 
 ## Background of the Problems
 
-I've enrolled in a course whose main content is AVR assembly language this semester. In the lab of this course, we have to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to develop, debug, and test AVR assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use a virtual machine to run this IDE.
+I've enrolled in a course whose main content is AVR assembly language this semester. In the lab of this course, we have to use an IDE called `Microchip Studio` (aka. `Atmel Studio`) to develop, debug, and test AVR assembler programs. Since I mainly use macOS and Microchip Studio supports only Windows, I need to use this IDE with a Windows 11 virtual machine.
 
 I used `Parallels Desktop`, the virtualization software that I mainly used, and its official wizard (`Get Windows 11 from Microsoft`) to create a Windows 11 VM, then successfully installed Microchip Studio in it. However, I encountered some weird problems when I started using Microchip Studio.
 
