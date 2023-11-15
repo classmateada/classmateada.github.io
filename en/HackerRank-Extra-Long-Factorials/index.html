@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -21,28 +21,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.classmateada.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="出于种种原因，我选择不再关注云原生。在那之后，我发现云原生并没有像我以前坚信的一样强大，它不是银弹，我也无需执着于它。  第一次认识云原生在 2022 年 4 月之前，我曾经非常喜欢基于 Spring Cloud Alibaba 的微服务——使用它可以很容易地开发出完善的微服务。我开发了一套基于 Spring Cloud Alibaba 的微服务用于参加一个软件开发比赛，但在我将这些微服务制作成">
+    <meta name="description" content="Link to this problemHackerRank Extra Long Factorials Intuition Implement large number multiplication using a string or an array.  Approach Create an array called largeInteger, which represents a large">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我为什么放弃了云原生（中文版）">
-<meta property="og:url" content="http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/index.html">
+<meta property="og:title" content="HackerRank Extra Long Factorials (Medium)">
+<meta property="og:url" content="http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/index.html">
 <meta property="og:site_name" content="ClassmateAda">
-<meta property="og:description" content="出于种种原因，我选择不再关注云原生。在那之后，我发现云原生并没有像我以前坚信的一样强大，它不是银弹，我也无需执着于它。  第一次认识云原生在 2022 年 4 月之前，我曾经非常喜欢基于 Spring Cloud Alibaba 的微服务——使用它可以很容易地开发出完善的微服务。我开发了一套基于 Spring Cloud Alibaba 的微服务用于参加一个软件开发比赛，但在我将这些微服务制作成">
-<meta property="og:locale">
-<meta property="article:published_time" content="2023-09-08T12:04:07.000Z">
-<meta property="article:modified_time" content="2023-09-14T15:16:17.147Z">
+<meta property="og:description" content="Link to this problemHackerRank Extra Long Factorials Intuition Implement large number multiplication using a string or an array.  Approach Create an array called largeInteger, which represents a large">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-15T10:12:24.000Z">
+<meta property="article:modified_time" content="2023-11-15T10:13:59.511Z">
 <meta property="article:author" content="ClassmateAda">
-<meta property="article:tag" content="云原生">
+<meta property="article:tag" content="HackerRank">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="Large numbers">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/">
+<link rel="canonical" href="http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/","path":"zh/Why-I-gave-up-Cloud-Native-Chinese/","title":"我为什么放弃了云原生（中文版）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/","path":"en/HackerRank-Extra-Long-Factorials/","title":"HackerRank Extra Long Factorials (Medium)"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>我为什么放弃了云原生（中文版） | ClassmateAda</title>
+<title>HackerRank Extra Long Factorials (Medium) | ClassmateAda</title>
   
 
 
@@ -115,7 +117,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%A4%E8%AF%86%E4%BA%91%E5%8E%9F%E7%94%9F"><span class="nav-number">1.</span> <span class="nav-text">第一次认识云原生</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%91%E5%8E%9F%E7%94%9F%EF%BC%8C%E6%88%91%E6%9B%BE%E7%BB%8F%E6%9C%80%E7%88%B1%E7%9A%84%E7%90%86%E8%AE%BA"><span class="nav-number">2.</span> <span class="nav-text">云原生，我曾经最爱的理论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%94%BE%E5%BC%83%E4%BA%86%E4%BA%91%E5%8E%9F%E7%94%9F"><span class="nav-number">3.</span> <span class="nav-text">为什么我放弃了云原生</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Link-to-this-problem"><span class="nav-number">1.</span> <span class="nav-text">Link to this problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Intuition"><span class="nav-number">2.</span> <span class="nav-text">Intuition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Approach"><span class="nav-number">3.</span> <span class="nav-text">Approach</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Complexity"><span class="nav-number">4.</span> <span class="nav-text">Complexity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -202,8 +204,8 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh">
-    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -216,12 +218,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="我为什么放弃了云原生（中文版） | ClassmateAda">
+      <meta itemprop="name" content="HackerRank Extra Long Factorials (Medium) | ClassmateAda">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          我为什么放弃了云原生（中文版）
+          HackerRank Extra Long Factorials (Medium)
         </h1>
 
         <div class="post-meta-container">
@@ -231,15 +233,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-09-08 22:04:07" itemprop="dateCreated datePublished" datetime="2023-09-08T22:04:07+10:00">2023-09-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-15 01:16:17" itemprop="dateModified" datetime="2023-09-15T01:16:17+10:00">2023-09-15</time>
+      <time title="Created: 2023-11-15 21:12:24 / Modified: 21:13:59" itemprop="dateCreated datePublished" datetime="2023-11-15T21:12:24+11:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -247,7 +243,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/" itemprop="url" rel="index"><span itemprop="name">云原生</span></a>
+          <a href="/categories/HackerRank/" itemprop="url" rel="index"><span itemprop="name">HackerRank</span></a>
         </span>
     </span>
 
@@ -260,21 +256,37 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><blockquote>
-<p>出于种种原因，我选择不再关注云原生。在那之后，我发现云原生并没有像我以前坚信的一样强大，它不是银弹，我也无需执着于它。</p>
-</blockquote>
-<h1 id="第一次认识云原生"><a href="#第一次认识云原生" class="headerlink" title="第一次认识云原生"></a>第一次认识云原生</h1><p>在 2022 年 4 月之前，我曾经非常喜欢基于 Spring Cloud Alibaba 的微服务——使用它可以很容易地开发出完善的微服务。我开发了一套基于 Spring Cloud Alibaba 的微服务用于参加一个软件开发比赛，但在我将这些微服务制作成 Docker 容器并使用 Kubernetes (K8S) 去管理之后，我发现 K8S 和 Spring Cloud 并不能很好地配合：它们中的很多功能（例如 Spring Cloud Gateway 与 Ingress）都是重复的，造成了两者互不兼容。两者之间的冲突多到整个项目都无法正常运行。</p>
-<p>这次犯错让我意识到我对 Spring Cloud Alibaba 和 Kubernetes 的了解都远远不够。在查找了足够多的信息后，我意识到 Spring Cloud 是用于构建传统微服务的框架，并不适合与 K8S 一起使用——除非你使用 Spring Cloud Kubernetes。此外，我也在收集资料的过程中了解到了一种名叫“Service Mesh”的新技术和一种名叫“云原生”的新理论。</p>
-<p>对于当时的我来说，云原生和 Service Mesh 并不是容易理解的知识。但当我读了许多与此相关的文章和书籍之后，我最终理解了它们是什么，以及它们的优势在哪里。我立刻感到传统微服务是相当落后的东西——传统微服务过于依赖 SDK，服务代码与 SDK 紧密耦合，微服务架构中的许多通用基本功能，例如服务发现、资源调度等，都是由 SDK 提供的。更糟糕的是，当 SDK 发生破坏性更新时，服务代码也得跟着更新。Service Mesh 提供了一种更棒的解决方案：将这些基本功能做成一个进程或容器，并使其与微服务容器共同运行（也就是运行在同一个 Pod 里）。Service Mesh 令我震惊的同时，还解决了我关于微服务的所有问题。</p>
-<h1 id="云原生，我曾经最爱的理论"><a href="#云原生，我曾经最爱的理论" class="headerlink" title="云原生，我曾经最爱的理论"></a>云原生，我曾经最爱的理论</h1><p>Service Mesh 引起了我对于云原生的兴趣。我发现云原生是一种引人注目的理论，并且一千个人眼中有一千种云原生。即使云原生如此抽象，以至于我至今都无法完全理解它，但我仍然在 2020 到 2022 年间持续学习它。我决定要从事与云原生相关的工作（例如云原生工程师、SRE、基础软件工程师等），所以我选择了 Go 语言作为我主要使用的编程语言，并且深入学习了 Docker、K8S 和 Istio，还没有错过任何一场我可以参加的有关于云原生和 Service Mesh 的会议。我并不认为这是一个成功的选择，不过我除了学习使用这些云原生工具以及它们的原理之外，还学到了大量软件设计和软件架构的知识。</p>
-<p>现在再来回顾这段时光，我可以自信地说“云原生是我曾经最爱的理论”。</p>
-<h1 id="为什么我放弃了云原生"><a href="#为什么我放弃了云原生" class="headerlink" title="为什么我放弃了云原生"></a>为什么我放弃了云原生</h1><p>最终，我在 2022 年末决定不再关注云原生。做出这个决定的原因主要有以下三点：</p>
-<ol>
-<li>云原生只是软件工程领域中的一种不成熟且抽象的理论，它并不能被用于解决所有问题——例如设计简单且低成本的 Web 服务。</li>
-<li>创业公司和小公司在实践中不适合使用云原生和 Service Mesh。这是针对成熟的大型 Web 服务的理论和工具。</li>
-<li>云原生是一种非常宽泛的理论，我并不需要如此执着于它本身。例如，开发和维护类 UNIX 操作系统和高性能的网络代理服务也是对云原生和 Service Mesh 的贡献。</li>
+    <div class="post-body" itemprop="articleBody"><h2 id="Link-to-this-problem"><a href="#Link-to-this-problem" class="headerlink" title="Link to this problem"></a>Link to this problem</h2><p><a target="_blank" rel="noopener" href="https://www.hackerrank.com/challenges/extra-long-factorials/problem">HackerRank Extra Long Factorials</a></p>
+<h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
+<li>Implement large number multiplication using a string or an array.</li>
+</ul>
+<h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ol>
+<li>Create an array called <code>largeInteger</code>, which represents a large number.</li>
+<li>Fill the <code>largeInteger</code>  with <code>n</code>.</li>
+<li>Iterate over numbers from <code>n</code> to 0:<ol>
+<li>Multiply <code>largeInteger</code> by this number.</li>
+<li>Handle the potential carry.</li>
 </ol>
-<p>当然，这并不意味着云原生这一理论不好或者我们不应该关注它。准确地说，我只是改变了为它做贡献的方法——现在的我将专注于开发类 UNIX 操作系统、网络代理、虚拟机等与云相关的基础软件，以此为云原生做出自己的贡献。</p>
+</li>
+<li>Output the content of <code>largeInteger</code> to stdout.</li>
+</ol>
+<p>Pseudocode of <code>largeIntMultiply</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">largeIntMultiply(largeInt, n):</span><br><span class="line">	Input largeInt a very large number represent by an array</span><br><span class="line">		n the multiplier</span><br><span class="line">	Output the largeInt multiplied by n</span><br><span class="line">	carry = 0</span><br><span class="line">	for every i from largeInt.size()-1 to 0:</span><br><span class="line">		number = n * largeInt[i] + carry</span><br><span class="line">		largeInt[i] = number % 10</span><br><span class="line">		carry = number / 10</span><br><span class="line">		if i == 0 and carry != 0:</span><br><span class="line">			add a 0 at the beginning of largeInt</span><br><span class="line">			i++</span><br><span class="line">		end if</span><br><span class="line">	end for</span><br><span class="line">	return largeInt</span><br></pre></td></tr></table></figure>
+
+<p>Pseudocode of <code>extraLongFactorials</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">extraLongFactorials(n):</span><br><span class="line">	Input n the number to be calculated</span><br><span class="line">	</span><br><span class="line">	largeInteger = empty array</span><br><span class="line">	i = n</span><br><span class="line">	for i != 0:</span><br><span class="line">		add i % 10 to the beginning of largeInteger </span><br><span class="line">		i /= 10</span><br><span class="line">	end for</span><br><span class="line">	for every i from n-1 to 2:</span><br><span class="line">		largeInteger = largeIntMultiply(largeInteger, i)</span><br><span class="line">	end for</span><br><span class="line">	output largeInteger to stdout</span><br></pre></td></tr></table></figure>
+
+<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2><p>Time complexity: $O(n^2)$.</p>
+<ul>
+<li>$n$ iterations to calculate the factorial.</li>
+<li>In each iteration:<ul>
+<li>Multiply the vector with the number is $O(n)$.</li>
+</ul>
+</li>
+<li>Overall complexity is $O(n^2)$.</li>
+</ul>
+<p>Space complexity: $O(n)$.</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">largeIntMultiply</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;largeInt, <span class="type">int</span> n)</span></span>;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">extraLongFactorials</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// Convert int to vercor&lt;int&gt;</span></span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; largeInteger;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n; i != <span class="number">0</span>; i /= <span class="number">10</span>) &#123;</span><br><span class="line">        largeInteger.<span class="built_in">insert</span>(largeInteger.<span class="built_in">begin</span>(), i % <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n<span class="number">-1</span>; i &gt;= <span class="number">2</span>; i--) &#123;</span><br><span class="line">        <span class="built_in">largeIntMultiply</span>(largeInteger, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : largeInteger) &#123;</span><br><span class="line">        cout &lt;&lt; i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">largeIntMultiply</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;largeInt, <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> carry = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = largeInt.<span class="built_in">size</span>()<span class="number">-1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="type">int</span> number = largeInt[i] * n + carry;</span><br><span class="line">        largeInt[i] = number % <span class="number">10</span>;</span><br><span class="line">        carry = number / <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">0</span> &amp;&amp; carry != <span class="number">0</span>) &#123;</span><br><span class="line">            largeInt.<span class="built_in">insert</span>(largeInt.<span class="built_in">begin</span>(), <span class="number">0</span>);</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -292,7 +304,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/" title="我为什么放弃了云原生（中文版）">http://www.classmateada.com/zh/Why-I-gave-up-Cloud-Native-Chinese/</a>
+      <a href="http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/" title="HackerRank Extra Long Factorials (Medium)">http://www.classmateada.com/en/HackerRank-Extra-Long-Factorials/</a>
   </li>
   <li class="post-copyright-license">
       <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -301,21 +313,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/" rel="tag"># 云原生</a>
+              <a href="/tags/HackerRank/" rel="tag"># HackerRank</a>
+              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/tags/Large-numbers/" rel="tag"># Large numbers</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/en/hello-world/" rel="prev" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/" rel="prev" title="LeetCode 1930. Unique Length-3 Palindromic Subsequences">
+                  <i class="fa fa-chevron-left"></i> LeetCode 1930. Unique Length-3 Palindromic Subsequences
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/en/Why-I-gave-up-Cloud-Native/" rel="next" title="Why I gave up Cloud Native">
-                  Why I gave up Cloud Native <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -336,16 +347,16 @@
   <div class="languages">
     <label class="lang-select-label">
       <i class="fa fa-language"></i>
-      <span>zh</span>
+      <span>English</span>
       <i class="fa fa-angle-up" aria-hidden="true"></i>
     </label>
     <select class="lang-select" data-canonical="" aria-label="Select language">
       
-        <option value="en" data-href="/Why-I-gave-up-Cloud-Native-Chinese/" selected="">
+        <option value="en" data-href="/HackerRank-Extra-Long-Factorials/" selected="">
           English
         </option>
       
-        <option value="zh-CN" data-href="/zh-CN/Why-I-gave-up-Cloud-Native-Chinese/" selected="">
+        <option value="zh-CN" data-href="/zh-CN/HackerRank-Extra-Long-Factorials/" selected="">
           简体中文
         </option>
       
