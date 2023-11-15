@@ -21,28 +21,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.classmateada.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="1234567#include &lt;iostream&gt;using namespace std;int main() &amp;#123;  cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;  return 0;&amp;#125;   This is the very first program I developed.Just like me,">
+    <meta name="description" content="Intuition Find the first and last occurrence (say firstOccurrence and lastOccurrence) of an unused character c. Count the number of unique characters between firstOccurrence and lastOccurrence (includ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://www.classmateada.com/en/hello-world/index.html">
+<meta property="og:title" content="LeetCode 1930. Unique Length-3 Palindromic Subsequences">
+<meta property="og:url" content="http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/index.html">
 <meta property="og:site_name" content="ClassmateAda">
-<meta property="og:description" content="1234567#include &lt;iostream&gt;using namespace std;int main() &amp;#123;  cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;  return 0;&amp;#125;   This is the very first program I developed.Just like me,">
+<meta property="og:description" content="Intuition Find the first and last occurrence (say firstOccurrence and lastOccurrence) of an unused character c. Count the number of unique characters between firstOccurrence and lastOccurrence (includ">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-04T17:39:43.000Z">
-<meta property="article:modified_time" content="2023-09-14T13:07:50.489Z">
+<meta property="article:published_time" content="2023-11-15T08:49:41.000Z">
+<meta property="article:modified_time" content="2023-11-15T08:50:58.532Z">
 <meta property="article:author" content="ClassmateAda">
-<meta property="article:tag" content="Personal improvement">
+<meta property="article:tag" content="LeetCode">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="Set">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.classmateada.com/en/hello-world/">
+<link rel="canonical" href="http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://www.classmateada.com/en/hello-world/","path":"en/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/","path":"en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/","title":"LeetCode 1930. Unique Length-3 Palindromic Subsequences"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | ClassmateAda</title>
+<title>LeetCode 1930. Unique Length-3 Palindromic Subsequences | ClassmateAda</title>
   
 
 
@@ -115,7 +117,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#A-destroyed-%E2%80%9Cgame-account%E2%80%9D"><span class="nav-number">1.</span> <span class="nav-text">A destroyed “game account”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Review-my-mistakes"><span class="nav-number">2.</span> <span class="nav-text">Review my mistakes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Restart-my-life"><span class="nav-number">3.</span> <span class="nav-text">Restart my life</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Epilog"><span class="nav-number">4.</span> <span class="nav-text">Epilog</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Intuition"><span class="nav-number">1.</span> <span class="nav-text">Intuition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Approach"><span class="nav-number">2.</span> <span class="nav-text">Approach</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Complexity"><span class="nav-number">3.</span> <span class="nav-text">Complexity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -203,7 +205,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -216,12 +218,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | ClassmateAda">
+      <meta itemprop="name" content="LeetCode 1930. Unique Length-3 Palindromic Subsequences | ClassmateAda">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          LeetCode 1930. Unique Length-3 Palindromic Subsequences
         </h1>
 
         <div class="post-meta-container">
@@ -231,24 +233,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-09-05 03:39:43" itemprop="dateCreated datePublished" datetime="2023-09-05T03:39:43+10:00">2023-09-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-14 23:07:50" itemprop="dateModified" datetime="2023-09-14T23:07:50+10:00">2023-09-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Non-technical/" itemprop="url" rel="index"><span itemprop="name">Non-technical</span></a>
-        </span>
+      <time title="Created: 2023-11-15 19:49:41 / Modified: 19:50:58" itemprop="dateCreated datePublished" datetime="2023-11-15T19:49:41+11:00">2023-11-15</time>
     </span>
 
   
@@ -260,21 +247,42 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;Hello world!&quot;</span> &lt;&lt; endl;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
+<li>Find the first and last occurrence (say <code>firstOccurrence</code> and <code>lastOccurrence</code>) of an unused character <code>c</code>.</li>
+<li>Count the number of unique characters between <code>firstOccurrence</code> and <code>lastOccurrence</code> (including <code>c</code> itself).</li>
+</ul>
+<h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ol>
+<li>Create an empty set <code>visited</code>.</li>
+<li>For every character <code>c</code> in <code>s</code>:<ol>
+<li>If <code>c</code> is a member of <code>visited</code>, jump to the next character.</li>
+<li>Otherwise, find the <code>firstOccurrence</code> and <code>lastOccurrence</code> of <code>c</code> in <code>s</code>.</li>
+<li>Create an empty set <code>unique</code>.</li>
+<li>Add every character between <code>firstOccurrence</code> and <code>lastOccurrence</code> to <code>unique</code>.</li>
+<li>Add the size of <code>unique</code> to answer.</li>
+</ol>
+</li>
+</ol>
+<p>Pseudocode of <code>countPalindromicSubsequence</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">countPalindromicSubsequence(s):</span><br><span class="line">	Input string s</span><br><span class="line">	Output number of unique palindromic subsequences in s of length 3</span><br><span class="line">	</span><br><span class="line">	visited = empty set</span><br><span class="line">	ans = 0</span><br><span class="line">	for every character c in s:</span><br><span class="line">		if c in set:</span><br><span class="line">			continue</span><br><span class="line">		end if</span><br><span class="line">		add c to visited</span><br><span class="line">		firstOccurrence = -1</span><br><span class="line">		lastOccurrence = -1</span><br><span class="line">		for every i from 0 to s.length():</span><br><span class="line">			if firstOccurrence == -1:</span><br><span class="line">				firstOccurrence = i	// Ensure that firstOccurrence only updates once</span><br><span class="line">			end if</span><br><span class="line">			lastOccurrence = i</span><br><span class="line">		end for</span><br><span class="line">		unique = empty set</span><br><span class="line">		for every i from firstOccurrence + 1 to lastOccurrence:</span><br><span class="line">			add s[i] to unique</span><br><span class="line">		end for</span><br><span class="line">		ans += unique.size()</span><br><span class="line">	end for</span><br><span class="line">	return ans</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>This is the very first program I developed.<br>Just like me, most programmers’ very first program is to print “Hello world” in the terminal.<br>Then, it’s the most suitable title for the very first article I write after I’ve started a completely new life.</p>
-</blockquote>
-<h1 id="A-destroyed-“game-account”"><a href="#A-destroyed-“game-account”" class="headerlink" title="A destroyed “game account”"></a>A destroyed “game account”</h1><p>Do you have such an experience: you destroy your character or account in a game, so you must create a new character or register a new account and start from zero? I had such an experience, but the thing that I destroyed was not my character or account in a game; it was my life.</p>
-<p>In 2022, I’ve chosen Golang as the programming language that I mostly use and Site Reliability Engineer as my job. I didn’t know that that was the worst decision I’ve made in my life. That doesn’t mean Golang is a terrible language or that SRE is a bad job for a programmer. They are just not suitable for a fresh graduate. You probably know that the status of a fresh graduate is really important in China because there’s a special opportunity for fresh graduates to be hired by companies in China regardless of work experience. But SRE is a job that requires a lot of experience, and Golang is a new programming language that also requires 3-5 years of experience in other languages. So, it’s really hard for a programmer who doesn’t have more than 3 years of experience to become a SRE using Golang in China; the chances are really limited.</p>
-<p>Fortunately, I finally got a job at a big international company as a SRE with a satisfactory salary. I worked hard, developed a lot of important features, solved many complicated bugs alone, and became an indispensable member of the SRE team. That’s the happiest 8 months of my life: my job became a part of my life, I live in a big city where everything is convenient and enjoyable, and I never need to work overtime. I feel happy every time I remember that time.</p>
-<p>The good times didn’t last long. I’ve lost my job because my department and group were abolished due to the company’s poor decision-making. I tried to find a new job as an SRE and asked over 400 companies, but I wasn’t given a single chance to interview because I only have 8 months of experience and I’m not a fresh graduate anymore. I was rejected by every company simply because of my experience, regardless of my strong programming skills and my ability to work as an experienced programmer.</p>
-<h1 id="Review-my-mistakes"><a href="#Review-my-mistakes" class="headerlink" title="Review my mistakes"></a>Review my mistakes</h1><p>I’m used to reviewing my mistakes when I know I’ve done something wrong, so I started thinking about why I failed just after I lost my job. A lot of my friends told me, “It’s not your fault; it’s due to the abnormal circumstances.” But I couldn’t agree with that because the root cause of this failure was that I’d chosen the wrong job and the inappropriate programming language for a fresh graduate. I think that kind of opinion is as silly as using a C++ compiler to compile Golang source codes, getting a “compilation failed”, and then complaining that the compiler is difficult to use. Anyway, I must change my programming language and ideal job.</p>
-<p>I chose C++ and operating system development after careful consideration. The main reason is that C++ is a widely used programming language compared with Golang. Besides, operating system developers are required by a lot of big companies, but the demand exceeds the supply because it’s boring and too difficult for most programmers. I also know that it’s easy for operating system developers to change their jobs to driver developers, embedded system developers, kernel developers, or C++ back-end developers. But there was still a question remaining: I need a job and more than 3 years of experience.</p>
-<p>I’ve made up my mind to get the status of a fresh graduate again by studying overseas to avoid the restriction of experience. That’s the easiest and most stable way, I think. I can also upgrade my education level to postgraduate by doing this, which may give me more chances to get a satisfactory job.</p>
-<h1 id="Restart-my-life"><a href="#Restart-my-life" class="headerlink" title="Restart my life"></a>Restart my life</h1><p>Unexpectedly, I got a chance to work as an outsourcing software engineer in the Department of OpenHarmony at Huawei. It’s a good job and an unforgettable experience, but I need to work overtime until 9 p.m. more than three times a week, and I usually need to work on Saturdays. So I didn’t change my decision to study overseas.</p>
-<p>I submitted some applications to Australian and New Zealand universities while working. Fortunately, I got some satisfactory offers and accepted one of them. All right, you all know what happened next: My life restarted successfully.</p>
-<h1 id="Epilog"><a href="#Epilog" class="headerlink" title="Epilog"></a>Epilog</h1><p>There are still a lot of things to do, like completing my course, applying for a summer internship, and improving my speaking English skills to communicate with locals. But I feel more confident than before because I’ve regained control of my life.</p>
+<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2><ul>
+<li>Time complexity: $O(n)$.<ul>
+<li>At most $\Sigma &#x3D; 26$ iterations of outer loop.</li>
+<li>In each iteration:<ul>
+<li>Find <code>firstOccurrence</code> and <code>lastOccurence</code> is $O(n)$.</li>
+<li>Create <code>unique</code> set is $O(n)$.</li>
+</ul>
+</li>
+<li>Overall complexity is $O(\Sigma n) &#x3D; O(n)$.</li>
+</ul>
+</li>
+<li>Space complexity: $O(\Sigma)$.<ul>
+<li><code>s</code> only contains lowercase English letters, so $\Sigma &#x3D; 26$.</li>
+<li>As a consequence, the maximum size of  <code>visited</code> and <code>unique</code> is 26.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countPalindromicSubsequence</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        unordered_set&lt;<span class="type">char</span>&gt; visited;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">char</span> c : s) &#123;</span><br><span class="line">          <span class="keyword">if</span> (visited.<span class="built_in">find</span>(c) != visited.<span class="built_in">end</span>()) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          visited.<span class="built_in">insert</span>(c);</span><br><span class="line">          <span class="comment">// Find the first and last occurence of c</span></span><br><span class="line">          <span class="type">int</span> lastOccurrence = <span class="number">-1</span>;</span><br><span class="line">          <span class="type">int</span> firstOccurrence = <span class="number">-1</span>;</span><br><span class="line">          <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; s.<span class="built_in">length</span>(); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[j] == c) &#123;</span><br><span class="line">              <span class="keyword">if</span> (firstOccurrence == <span class="number">-1</span>) &#123;</span><br><span class="line">                <span class="comment">// firstOccurence can only be updated once</span></span><br><span class="line">                firstOccurrence = j;</span><br><span class="line">              &#125;</span><br><span class="line">              lastOccurrence = j;</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="comment">// Count the number of unique characters between i and lastOccurance</span></span><br><span class="line">          unordered_set&lt;<span class="type">char</span>&gt; unique;</span><br><span class="line">          <span class="keyword">for</span> (<span class="type">int</span> j = firstOccurrence+<span class="number">1</span>; j &lt; lastOccurrence; j++) &#123;</span><br><span class="line">            unique.<span class="built_in">insert</span>(s[j]);</span><br><span class="line">          &#125;</span><br><span class="line">          ans += unique.<span class="built_in">size</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -292,7 +300,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://www.classmateada.com/en/hello-world/" title="Hello World">http://www.classmateada.com/en/hello-world/</a>
+      <a href="http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/" title="LeetCode 1930. Unique Length-3 Palindromic Subsequences">http://www.classmateada.com/en/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/</a>
   </li>
   <li class="post-copyright-license">
       <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -301,21 +309,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Personal-improvement/" rel="tag"># Personal improvement</a>
+              <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
+              <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/tags/Set/" rel="tag"># Set</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/zh-CN/Hello-World-0/" rel="prev" title="你好，世界（中文版）">
-                  <i class="fa fa-chevron-left"></i> 你好，世界（中文版）
+                <a href="/en/LeetCode-1846-Maximum-Element-After-Decreasing-and-Rearranging/" rel="prev" title="LeetCode 1846. Maximum Element After Decreasing and Rearranging">
+                  <i class="fa fa-chevron-left"></i> LeetCode 1846. Maximum Element After Decreasing and Rearranging
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/zh/Why-I-gave-up-Cloud-Native-Chinese/" rel="next" title="我为什么放弃了云原生（中文版）">
-                  我为什么放弃了云原生（中文版） <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -341,11 +348,11 @@
     </label>
     <select class="lang-select" data-canonical="" aria-label="Select language">
       
-        <option value="en" data-href="/hello-world/" selected="">
+        <option value="en" data-href="/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/" selected="">
           English
         </option>
       
-        <option value="zh-CN" data-href="/zh-CN/hello-world/" selected="">
+        <option value="zh-CN" data-href="/zh-CN/LeetCode-1930-Unique-Length-3-Palindromic-Subsequences/" selected="">
           简体中文
         </option>
       
