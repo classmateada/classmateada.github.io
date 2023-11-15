@@ -12,7 +12,7 @@ categories:
 
 ## Intuition
 - Set the first element `arr[0]` to 1.
-- Limit the difference of two adjacent elements to less than 1, which means `arr[i+1]` is the same as or greater than 1 than `arr[i]`.
+- Limit the difference of two adjacent elements to 1 or less than 1, which means `arr[i+1]` is the same as or greater than 1 than `arr[i]`.
 - Return the maximum possible value in `arr`.
 
 ## Approach
@@ -71,4 +71,3 @@ public:
     }
 };
 ```
-
