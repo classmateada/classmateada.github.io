@@ -21,15 +21,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.classmateada.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Intuition Set the first element arr[0] to 1. Limit the difference of two adjacent elements to 1 or less than 1, which means arr[i+1] is the same as or greater than 1 than arr[i]. Return the maximum po">
+    <meta name="description" content="Intuition Set the first element arr[0] to 1. Limit the difference of two adjacent elements to 1 or less than 1, which means arr[i+1] is the same as arr[i] or equal to arr[i] + 1. Return the maximum po">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 1846. Maximum Element After Decreasing and Rearranging">
 <meta property="og:url" content="http://www.classmateada.com/en/LeetCode-1846-Maximum-Element-After-Decreasing-and-Rearranging/index.html">
 <meta property="og:site_name" content="ClassmateAda">
-<meta property="og:description" content="Intuition Set the first element arr[0] to 1. Limit the difference of two adjacent elements to 1 or less than 1, which means arr[i+1] is the same as or greater than 1 than arr[i]. Return the maximum po">
+<meta property="og:description" content="Intuition Set the first element arr[0] to 1. Limit the difference of two adjacent elements to 1 or less than 1, which means arr[i+1] is the same as arr[i] or equal to arr[i] + 1. Return the maximum po">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-15T08:47:57.000Z">
-<meta property="article:modified_time" content="2023-11-15T09:09:47.232Z">
+<meta property="article:modified_time" content="2023-11-15T09:12:21.369Z">
 <meta property="article:author" content="ClassmateAda">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="Algorithm">
@@ -235,7 +235,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 19:47:57 / Modified: 20:09:47" itemprop="dateCreated datePublished" datetime="2023-11-15T19:47:57+11:00">2023-11-15</time>
+      <time title="Created: 2023-11-15 19:47:57 / Modified: 20:12:21" itemprop="dateCreated datePublished" datetime="2023-11-15T19:47:57+11:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -258,7 +258,7 @@
     
     <div class="post-body" itemprop="articleBody"><h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
 <li>Set the first element <code>arr[0]</code> to 1.</li>
-<li>Limit the difference of two adjacent elements to 1 or less than 1, which means <code>arr[i+1]</code> is the same as or greater than 1 than <code>arr[i]</code>.</li>
+<li>Limit the difference of two adjacent elements to 1 or less than 1, which means <code>arr[i+1]</code> is the same as <code>arr[i]</code> or equal to <code>arr[i] + 1</code>.</li>
 <li>Return the maximum possible value in <code>arr</code>.</li>
 </ul>
 <h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ol>
