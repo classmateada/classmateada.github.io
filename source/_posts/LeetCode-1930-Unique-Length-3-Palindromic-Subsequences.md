@@ -6,7 +6,7 @@ tags:
     - LeetCode
     - Algorithm
     - Set
-Categories:
+categories:
     - LeetCode
 ---
 
