@@ -21,30 +21,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.classmateada.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Intuition Pairing the biggest number with the smallest number leads to the minimum pair sum for the biggest number. Remove them from the array, find the next biggest and smallest number, and pair them">
+    <meta name="description" content="Intuition Dynamic programming (bottom-up approach). Based on hint 1 (divide the corridor into segments): There will be no solution if the number of seats is odd. Divide corridor into multiple groups;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 1877. Minimize Maximum Pair Sum in Array">
-<meta property="og:url" content="http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/index.html">
+<meta property="og:title" content="Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor">
+<meta property="og:url" content="http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/index.html">
 <meta property="og:site_name" content="ClassmateAda">
-<meta property="og:description" content="Intuition Pairing the biggest number with the smallest number leads to the minimum pair sum for the biggest number. Remove them from the array, find the next biggest and smallest number, and pair them">
+<meta property="og:description" content="Intuition Dynamic programming (bottom-up approach). Based on hint 1 (divide the corridor into segments): There will be no solution if the number of seats is odd. Divide corridor into multiple groups;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-11-17T09:36:13.000Z">
-<meta property="article:modified_time" content="2023-11-17T09:37:11.067Z">
+<meta property="article:published_time" content="2023-11-29T12:59:59.000Z">
+<meta property="article:modified_time" content="2023-11-29T13:14:09.440Z">
 <meta property="article:author" content="ClassmateAda">
 <meta property="article:tag" content="Algorithm">
 <meta property="article:tag" content="LeetCode">
-<meta property="article:tag" content="Sorting">
+<meta property="article:tag" content="LeetCode hard problems">
+<meta property="article:tag" content="Dynamic programming">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/">
+<link rel="canonical" href="http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/","path":"en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/","title":"LeetCode 1877. Minimize Maximum Pair Sum in Array"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/","path":"en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/","title":"Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>LeetCode 1877. Minimize Maximum Pair Sum in Array | ClassmateAda</title>
+<title>Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor | ClassmateAda</title>
   
 
 
@@ -205,7 +206,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -218,12 +219,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="LeetCode 1877. Minimize Maximum Pair Sum in Array | ClassmateAda">
+      <meta itemprop="name" content="Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor | ClassmateAda">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LeetCode 1877. Minimize Maximum Pair Sum in Array
+          Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor
         </h1>
 
         <div class="post-meta-container">
@@ -233,9 +234,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-11-17 20:36:13 / Modified: 20:37:11" itemprop="dateCreated datePublished" datetime="2023-11-17T20:36:13+11:00">2023-11-17</time>
+      <time title="Created: 2023-11-29 23:59:59" itemprop="dateCreated datePublished" datetime="2023-11-29T23:59:59+11:00">2023-11-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-11-30 00:14:09" itemprop="dateModified" datetime="2023-11-30T00:14:09+11:00">2023-11-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -257,40 +264,52 @@
     
     
     <div class="post-body" itemprop="articleBody"><h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
-<li>Pairing the biggest number with the smallest number leads to the minimum pair sum for the biggest number.</li>
-<li>Remove them from the array, find the next biggest and smallest number, and pair them.</li>
-<li>Find the maximum pair sum while pairing and return it after the array is empty.</li>
+<li>Dynamic programming (bottom-up approach).</li>
+<li>Based on hint 1 (divide the corridor into segments):<ul>
+<li>There will be no solution if the number of seats is odd.</li>
+<li>Divide <code>corridor</code> into multiple groups; each group contains <strong>exactly</strong> two seats and several plants.</li>
 </ul>
-<h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ol>
-<li>Sort <code>nums</code> in ascending order.</li>
-<li>Initialise <code>ans</code> with 0, which represents that the maximum pair sum in <code>nums</code> is 0.</li>
-<li>Iterate over <code>nums</code> from 0 to <code>nums.size() / 2 - 1</code>.</li>
-<li>On each iteration:<ol>
-<li>Pair <code>nums[i]</code> with <code>nums[nums.size()-1-i]</code>.</li>
-<li>Calculate their pair sum and update <code>ans</code>.</li>
-</ol>
 </li>
-<li>Return <code>ans</code>.</li>
-</ol>
-<p>Pseudocode of this problem:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">minPairSum(nums):</span><br><span class="line">	Input nums array of positive integers of size n</span><br><span class="line">	Output the minimized maximum pair sum</span><br><span class="line">	</span><br><span class="line">	sort nums in ascending order</span><br><span class="line">	ans = 0</span><br><span class="line">	for all i from 0 to n / 2:</span><br><span class="line">		// Pair nums[i] (the minimum number) with nums[n-1-i] (the maximum number)</span><br><span class="line">		ans = max(ans, nums[i] + nums[n-1-i])</span><br><span class="line">	end for</span><br><span class="line">	return ans</span><br></pre></td></tr></table></figure>
+<li>Based on hint 3 (if there are k plants between two adjacent segments, there are k + 1 positions (ways) you could install the divider):<ul>
+<li>There will be <code>nbOfPlants + 1</code> ways to install a divider between two successive groups.</li>
+<li><code>nbOfPlants</code> is the number of plants between two successive groups (i.e., ignore the plants inside a single group).</li>
+</ul>
+</li>
+<li>The answer is the number of ways to place a divider between each successive group times with each other.</li>
+<li>Define the answer as <code>long</code> to prevent potential overflows.</li>
+</ul>
+<h2 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h2><ul>
+<li>Initialise <code>nbOfSeats</code> and <code>nbOfPlants</code> to 0, and initialise <code>ans</code> to 1 (assume that there are at least two seats in the corridor).</li>
+<li>Range over <code>corridor</code> (say <code>corridor[i]</code> as <code>c</code>):<ul>
+<li>Increase <code>nbOfSeats</code> if <code>c</code> is a seat.</li>
+<li>If <code>c</code> is a plant:<ul>
+<li>Increase <code>nbOfPlants</code> if we have already found a group (<code>nbOfSeats == 2</code>).</li>
+<li>Otherwise, the plant is inside a single group, and we should ignore it.</li>
+</ul>
+</li>
+<li>After reaching the start of the next group (<code>nbOfSeats == 3</code>):<ul>
+<li>Update <code>ans</code>.</li>
+<li>Set <code>nbOfSeats</code> to 1 (i.e., move to the next group of seats), and clear <code>nbOfPlants</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Return 0 if <code>nbOfSeats != 2</code> (i.e., there’s an odd number of seats).</li>
+<li>Otherwise, return <code>ans</code>.</li>
+</ul>
+<p>Pseudocode of <code>numberOfWays()</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">numberOfWays(corridor):</span><br><span class="line">	Input corridor a string that contains only &#x27;S&#x27;s and &#x27;P&#x27;s</span><br><span class="line">	Output number of ways to install dividers in this corridor</span><br><span class="line">	</span><br><span class="line">	nbOfSeats = 0</span><br><span class="line">	nbOfPlants = 0</span><br><span class="line">	ans = 1</span><br><span class="line">	for every c in corridor:</span><br><span class="line">		if c == &#x27;S&#x27;:</span><br><span class="line">			nbOfSeats++</span><br><span class="line">		else:</span><br><span class="line">			if nbOfSeats == 2:</span><br><span class="line">				nbOfPlants++</span><br><span class="line">		end if</span><br><span class="line">		if nbOfSeats == 3:</span><br><span class="line">			ans = (ans * (nbOfPlants + 1)) % (1e9 + 7)</span><br><span class="line">			nbOfSeats = 1</span><br><span class="line">			nbOfPlants = 0</span><br><span class="line">	end for</span><br><span class="line">	if nbOfSeats != 2:</span><br><span class="line">		return 0</span><br><span class="line">	end if</span><br><span class="line">	return ans</span><br></pre></td></tr></table></figure>
 
-<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2><p>Time complexity: $O(nlogn)$.</p>
+<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2><ul>
+<li><p>Time complexity: $O(n)$.</p>
 <ul>
-<li><p>Sorting <code>nums</code> in ascending order is $O(nlogn)$.</p>
-</li>
-<li><p>$n &#x2F; 2$ iterations to pair elements and find the maximum pair sum.</p>
-</li>
-<li><p>In each iteration:</p>
-<ul>
-<li>Calculate the pair sum and update the maximum pair sum is $O(1)$.</li>
+<li>$n$ iterations to calculate the answer.</li>
 </ul>
 </li>
-<li><p>Overall complexity is $O(nlogn)$.</p>
+<li><p>Space complexity: $O(1)$.</p>
 </li>
 </ul>
-<p>Space complexity: $O(1)$.</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="type">int</span> <span class="title">minPairSum</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>() / <span class="number">2</span>; i++) &#123;</span><br><span class="line">      ans = <span class="built_in">max</span>(ans, nums[i] + nums[nums.<span class="built_in">size</span>()<span class="number">-1</span>-i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line">  <span class="function"><span class="type">int</span> <span class="title">numberOfWays</span><span class="params">(string corridor)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> nbOfSeats = <span class="number">0</span>;  <span class="comment">// nbOfSeats is the number of seats in this group</span></span><br><span class="line">    <span class="type">int</span> nbOfPlants = <span class="number">0</span>;</span><br><span class="line">    <span class="type">long</span> ans = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">char</span> c : corridor) &#123;</span><br><span class="line">      <span class="keyword">if</span> (c == <span class="string">&#x27;S&#x27;</span>) &#123;</span><br><span class="line">        nbOfSeats++;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (nbOfSeats == <span class="number">2</span>) &#123;</span><br><span class="line">          <span class="comment">// Ignore plants inside a single group (i.e., only count plants between groups)</span></span><br><span class="line">          nbOfPlants++;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (nbOfSeats == <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="comment">// This group reached its capacity</span></span><br><span class="line">        ans = (ans * (nbOfPlants + <span class="number">1</span>)) % MOD;</span><br><span class="line">        nbOfSeats = <span class="number">1</span>;  <span class="comment">// Switch to the next group</span></span><br><span class="line">        nbOfPlants = <span class="number">0</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// No answer if there&#x27;re odd number of seats</span></span><br><span class="line">    <span class="keyword">if</span> (nbOfSeats != <span class="number">2</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -308,7 +327,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/" title="LeetCode 1877. Minimize Maximum Pair Sum in Array">http://www.classmateada.com/en/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/</a>
+      <a href="http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/" title="Hard | LeetCode 2147. Number of Ways to Divide a Long Corridor">http://www.classmateada.com/en/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/</a>
   </li>
   <li class="post-copyright-license">
       <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -319,21 +338,19 @@
           <div class="post-tags">
               <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
               <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
-              <a href="/tags/Sorting/" rel="tag"># Sorting</a>
+              <a href="/tags/LeetCode-hard-problems/" rel="tag"># LeetCode hard problems</a>
+              <a href="/tags/Dynamic-programming/" rel="tag"># Dynamic programming</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/en/LeetCode-1980-Find-Unique-Binary-String/" rel="prev" title="LeetCode 1980. Find Unique Binary String">
-                  <i class="fa fa-chevron-left"></i> LeetCode 1980. Find Unique Binary String
+                <a href="/en/LeetCode-191-Number-of-1-Bits/" rel="prev" title="LeetCode 191. Number of 1 Bits">
+                  <i class="fa fa-chevron-left"></i> LeetCode 191. Number of 1 Bits
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/en/LeetCode-191-Number-of-1-Bits/" rel="next" title="LeetCode 191. Number of 1 Bits">
-                  LeetCode 191. Number of 1 Bits <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -359,11 +376,11 @@
     </label>
     <select class="lang-select" data-canonical="" aria-label="Select language">
       
-        <option value="en" data-href="/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/" selected="">
+        <option value="en" data-href="/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/" selected="">
           English
         </option>
       
-        <option value="zh-CN" data-href="/zh-CN/LeetCode-1877-Minimize-Maximum-Pair-Sum-in-Array/" selected="">
+        <option value="zh-CN" data-href="/zh-CN/LeetCode-2147-Number-of-Ways-to-Divide-a-Long-Corridor/" selected="">
           简体中文
         </option>
       
