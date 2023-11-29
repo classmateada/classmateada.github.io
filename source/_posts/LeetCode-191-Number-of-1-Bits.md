@@ -10,8 +10,6 @@ categories:
     - LeetCode
 ---
 
-#  191. Number of 1 Bits
-
 ## Intuition
 
 - Check how many 1 bits are there in the binary representation of `n`.
