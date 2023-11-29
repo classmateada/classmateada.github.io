@@ -372,7 +372,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-30 00:15:22" itemprop="dateModified" datetime="2023-11-30T00:15:22+11:00">2023-11-30</time>
+      <time title="Modified: 2023-11-30 00:17:28" itemprop="dateModified" datetime="2023-11-30T00:17:28+11:00">2023-11-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -394,7 +394,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="191-Number-of-1-Bits"><a href="#191-Number-of-1-Bits" class="headerlink" title="191. Number of 1 Bits"></a>191. Number of 1 Bits</h1><h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
+          <h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
 <li>Check how many 1 bits are there in the binary representation of <code>n</code>.</li>
 <li>Using the right shift operation, check whether the last bit of <code>n</code> is 1 (by checking whether <code>n</code> is odd).</li>
 </ul>
@@ -408,7 +408,15 @@
 <p>Pseudocode of <code>hammingWeight()</code>:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hammingWeight(n):</span><br><span class="line">	Input n a 32-bit unsigned integer</span><br><span class="line">	Output number of 1 bits in the binary representation of n</span><br><span class="line">	</span><br><span class="line">	ans = 0</span><br><span class="line">	while n &gt; 0:</span><br><span class="line">		ans += (n % 2)</span><br><span class="line">		right shift n</span><br><span class="line">	end while</span><br><span class="line">	return ans</span><br></pre></td></tr></table></figure>
 
-<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2>
+<h2 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h2><ul>
+<li><p>Time complexity: $O(logn)$.</p>
+<ul>
+<li>$logn$ iterations to calculate how many 1 bits are in the binary representation.</li>
+</ul>
+</li>
+<li><p>Space complexity: $O(1)$.</p>
+</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/en/LeetCode-191-Number-of-1-Bits/#more" rel="contents">
