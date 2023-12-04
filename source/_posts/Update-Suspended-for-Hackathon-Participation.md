@@ -7,7 +7,7 @@ tags:
 
 Dear ApisOps Community and Esteemed Readers,
 
-As an operating system developer who is passionate about software architecture and cloud infrastructure, I'm excited to announce that I will participate in a hackathon in Sydney commencing on 5 December. As a team leader, a software architect, and a back-end engineer, I need to allocate my full attention to this event, especially in the first several days.
+As an operating system developer who is passionate about software architecture and cloud infrastructure, I'm excited to announce that I will participate in a hackathon held by OpenD/I in Sydney commencing on 5 December. As a team leader, a software architect, and a back-end engineer, I need to allocate my full attention to this event, especially in the first several days.
 
 As a consequence, there will be a suspension of updates on this website until 8 December. The development process for ApisOps will also continue from this day on.
 
