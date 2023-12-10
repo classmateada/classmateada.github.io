@@ -138,7 +138,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -199,7 +199,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/Update-Suspended-for-Hackathon-Participation/">
+    <link itemprop="mainEntityOfPage" href="http://www.classmateada.com/en/LeetCode-94-Binary-Tree-Inorder-Traversal/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -217,7 +217,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/en/Update-Suspended-for-Hackathon-Participation/" class="post-title-link" itemprop="url">NOTICE: Update Suspended Due to Hackathon Participation</a>
+          <a href="/en/LeetCode-94-Binary-Tree-Inorder-Traversal/" class="post-title-link" itemprop="url">LeetCode 94. Binary Tree Inorder Traversal</a>
         </h2>
 
         <div class="post-meta-container">
@@ -229,7 +229,16 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-12-04 12:17:52 / Modified: 13:24:07" itemprop="dateCreated datePublished" datetime="2023-12-04T12:17:52+11:00">2023-12-04</time>
+      <time title="Created: 2023-12-10 09:06:50 / Modified: 09:08:58" itemprop="dateCreated datePublished" datetime="2023-12-10T09:06:50+08:00">2023-12-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
     </span>
 
   
@@ -242,17 +251,21 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Dear ApisOps Community and Esteemed Readers,</p>
-<p>As an operating system developer who is passionate about software architecture and cloud infrastructure, I’m excited to announce that I will participate in a hackathon held by OpenD&#x2F;I in Sydney commencing on 5 December. As a team leader, a software architect, and a back-end engineer, I need to allocate my full attention to this event, especially in the first several days.</p>
-<p>As a consequence, there will be a suspension of updates on this website until 8 December. The development process for ApisOps will also continue from this day on.</p>
-<p>However, our solution for this hackathon will be open-source, and it will be available on <a target="_blank" rel="noopener" href="https://github.com/classmateada/open-di-hackathon">this repository</a> on 5 December. You can track our work through this repository if you like.</p>
-<p>I greatly appreciate your understanding and support during this period. I’m eager to bring back content about ApisOps, algorithms, and software design after we fully understand the problem and make a complete scaffold for our solution.</p>
-<p>I’m sorry for the inconvenience caused. Thank you for your continued support!</p>
-<p>Ada</p>
+          <h2 id="Intuition"><a href="#Intuition" class="headerlink" title="Intuition"></a>Intuition</h2><ul>
+<li>Traverse the left subtree.</li>
+<li>Visit the root node.</li>
+<li>Traverse the right subtree.</li>
+</ul>
+<h2 id="Approach-1-Recursion"><a href="#Approach-1-Recursion" class="headerlink" title="Approach 1: Recursion"></a>Approach 1: Recursion</h2><ul>
+<li>Implement the traversal process recursively.</li>
+</ul>
+<p>Pseudocode of this approach:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">path[]</span><br><span class="line">traverse(root):</span><br><span class="line">	Input root of a binary tree</span><br><span class="line">	</span><br><span class="line">	if root = NULL then</span><br><span class="line">		return</span><br><span class="line">	end if</span><br><span class="line">	traverse(left(root))</span><br><span class="line">	add root to path</span><br><span class="line">	traverse(right(root))</span><br><span class="line">	return</span><br></pre></td></tr></table></figure>
 
+<h3 id="Complexity"><a href="#Complexity" class="headerlink" title="Complexity"></a>Complexity</h3><p>Time complexity: $O(n)$.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/Update-Suspended-for-Hackathon-Participation/#more" rel="contents">
+              <a class="btn" href="/en/LeetCode-94-Binary-Tree-Inorder-Traversal/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -311,15 +324,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-11-29 23:59:59" itemprop="dateCreated datePublished" datetime="2023-11-29T23:59:59+11:00">2023-11-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-30 00:14:09" itemprop="dateModified" datetime="2023-11-30T00:14:09+11:00">2023-11-30</time>
+      <time title="Created: 2023-11-29 23:59:59 / Modified: 21:14:09" itemprop="dateCreated datePublished" datetime="2023-11-29T23:59:59+08:00">2023-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -448,15 +455,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-11-29 23:59:35" itemprop="dateCreated datePublished" datetime="2023-11-29T23:59:35+11:00">2023-11-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-30 00:17:28" itemprop="dateModified" datetime="2023-11-30T00:17:28+11:00">2023-11-30</time>
+      <time title="Created: 2023-11-29 23:59:35 / Modified: 21:17:28" itemprop="dateCreated datePublished" datetime="2023-11-29T23:59:35+08:00">2023-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -564,7 +565,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-17 20:36:13 / Modified: 20:37:11" itemprop="dateCreated datePublished" datetime="2023-11-17T20:36:13+11:00">2023-11-17</time>
+      <time title="Created: 2023-11-17 20:36:13 / Modified: 17:37:11" itemprop="dateCreated datePublished" datetime="2023-11-17T20:36:13+08:00">2023-11-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -669,7 +670,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-17 20:33:59 / Modified: 20:37:27" itemprop="dateCreated datePublished" datetime="2023-11-17T20:33:59+11:00">2023-11-17</time>
+      <time title="Created: 2023-11-17 20:33:59 / Modified: 17:37:27" itemprop="dateCreated datePublished" datetime="2023-11-17T20:33:59+08:00">2023-11-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -773,7 +774,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 21:12:24 / Modified: 21:15:25" itemprop="dateCreated datePublished" datetime="2023-11-15T21:12:24+11:00">2023-11-15</time>
+      <time title="Created: 2023-11-15 21:12:24 / Modified: 18:15:25" itemprop="dateCreated datePublished" datetime="2023-11-15T21:12:24+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -874,7 +875,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 19:49:41 / Modified: 21:15:33" itemprop="dateCreated datePublished" datetime="2023-11-15T19:49:41+11:00">2023-11-15</time>
+      <time title="Created: 2023-11-15 19:49:41 / Modified: 18:15:33" itemprop="dateCreated datePublished" datetime="2023-11-15T19:49:41+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -994,7 +995,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-11-15 19:47:57 / Modified: 21:15:28" itemprop="dateCreated datePublished" datetime="2023-11-15T19:47:57+11:00">2023-11-15</time>
+      <time title="Created: 2023-11-15 19:47:57 / Modified: 18:15:28" itemprop="dateCreated datePublished" datetime="2023-11-15T19:47:57+08:00">2023-11-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1114,14 +1115,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2023-09-14 23:05:57" itemprop="dateCreated datePublished" datetime="2023-09-14T23:05:57+10:00">2023-09-14</time>
+      <time title="Created: 2023-09-14 23:05:57" itemprop="dateCreated datePublished" datetime="2023-09-14T23:05:57+08:00">2023-09-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-16 00:40:25" itemprop="dateModified" datetime="2023-09-16T00:40:25+10:00">2023-09-16</time>
+      <time title="Modified: 2023-09-15 22:40:25" itemprop="dateModified" datetime="2023-09-15T22:40:25+08:00">2023-09-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1210,14 +1211,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2023-09-14 23:05:48" itemprop="dateCreated datePublished" datetime="2023-09-14T23:05:48+10:00">2023-09-14</time>
+      <time title="Created: 2023-09-14 23:05:48" itemprop="dateCreated datePublished" datetime="2023-09-14T23:05:48+08:00">2023-09-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-15 03:37:59" itemprop="dateModified" datetime="2023-09-15T03:37:59+10:00">2023-09-15</time>
+      <time title="Modified: 2023-09-15 01:37:59" itemprop="dateModified" datetime="2023-09-15T01:37:59+08:00">2023-09-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
