@@ -53,7 +53,7 @@ aNode, as an innovative open-source cloud infrastructure, shines in its key func
 - **Simple Setup and Configuration**: aNode is designed with user-friendliness in mind, offering straightforward setup and configuration processes via RESTful APIs, making it accessible to both beginners and experienced users. It's also containerised and can be easily set up using Docker without any setup fees.
 - **Integration with Existing Systems**: Its compatibility and ease of integration with existing systems and technologies make aNode a good choice in a developer's perspective.
 
-## How we Did It?
+## How We Did It?
 
 The implementation of aNode, is noteworthy for its integration of Apache Cassandra for database and the use of HashiCorp's `memberlist` library to implement the Gossip protocol. These choices play a pivotal role in ensuring aNode's efficiency, scalability, and reliability.
 
