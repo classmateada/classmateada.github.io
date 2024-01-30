@@ -127,7 +127,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: always
+  display: post
 
   # Sidebar padding in pixels.
   padding: 18
@@ -178,7 +178,7 @@ links:
   桜風の狐: https://blog.inuyasha.love/
   Grayi: https://echosorari.github.io/
   # Pwn4Club: https://pwn4.club/
-  Gentlemen: https://ge.ntle.men/
+  r4ys0: https://raysonhan.com/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
