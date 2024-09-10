@@ -6,44 +6,38 @@ type: about
 
 ## Who am I?
 
-Hi, I'm Ada.
+Hi, I'm Ada Mu.
 
 I'm:
 
 - An international student pursuing a Master of Information Technology
-- A C/C++ developer
+- A software design enthusiast
 - A UNIX-like operating system (mainly macOS and Arch Linux) user
 - A pragmatist
 - A minimalist
 - A planespotter & trainspotter
-- A barista interested in Latte art
 
 I'm interested in:
 
 - Software architecture
-- C/C++ development
-- Operating system design and development
 - Low-level system design and development
 - Internet of Things (IoT)
-- Microkernel
-- Decentralised distributed systems
+- Distributed systems
 - Site Reliability Engineering (SRE)
+- Embedded software development
 
 I've worked as a:
 
-- Junior Software, Infrastructure & Network Engineer in **Openmesh** (**Jan 2024 - Present**)
-- Outsourcing Software Engineer in the OpenHarmony Dept. of **Huawei Technologies** for 5 months (**Jan 2023 - May 2023**)
+- Junior Software, Infrastructure & Network Engineer in **Openmesh** for 5 months (**Jan 2024 - May 2024**)
 - Game Reliability Engineer (GRE) in **Garena** for 9 months (**Mar 2022 - Nov 2022**)
 
 Jobs I'm competent for:
-- Operating System Developer
+
 - Embedded Software Developer
 - Site Reliability Engineer (SRE)
 - Platform Engineer
 - Back-end Engineer
 - Full-stack Engineer
-
-Since I'm a beginner at using English every day, please ignore the potential typos and grammar mistakes in my articles. You can leave a comment about those mistakes if you want, and I will correct them as soon as I receive your comment.
 
 ## What's this website for?
 

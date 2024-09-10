@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ClassmateAda
-subtitle: C++ | Assembly | OS | Open Source
-description: Stay humble and keep it simple.
-keywords: C++ | Assembly | OS | Open Source
-author: ClassmateAda
+title: Ada Mu
+subtitle: SRE | Software Design | Open Source
+description: Good weather doesn't train good pilots.
+keywords: SRE | Software Design | Open Source
+author: Ada Mu
 language:
   - en
   - zh-CN
@@ -15,7 +15,7 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://www.classmateada.com
+url: http://www.ada-mu.com
 permalink: :lang/:title/
 permalink_defaults:
 pretty_urls:
