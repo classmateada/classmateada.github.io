@@ -131,7 +131,7 @@ root-directory/
 
 ### Makefile
 
-With multiple commands in the same project, it's essential to have a structure and easy-to-maintain build process.
+With multiple commands in the same project, it's essential to have a structural and easy-to-maintain build process.
 
 Here's an example Makefile for the directory layout above to simplify the build process:
 
